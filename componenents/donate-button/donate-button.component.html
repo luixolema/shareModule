@@ -1,0 +1,13 @@
+<ng-container *transloco="let t">
+  <div class="donation-button-container uk-position-fixed uk-position-bottom-right uk-padding-small"
+       [matTooltip]="t('Buy me a coffee')+' :)'"
+       matTooltipPosition="above"
+       cdkDrag
+  >
+    <a mat-fab color="primary"
+       href="https://www.buymeacoffee.com/luixo" target="_blank"
+    >
+      <mat-icon>coffee</mat-icon>
+    </a>
+  </div>
+</ng-container>

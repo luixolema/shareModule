@@ -1,0 +1,9 @@
+<div *ngIf="loading" id="spinner">
+  Loading...
+<!--  TODO Improve this-->
+  <!--    <mat-progress-spinner></mat-progress-spinner>-->
+</div>
+<div *ngIf="!loading">
+  <ng-content></ng-content>
+</div>
+
