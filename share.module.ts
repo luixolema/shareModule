@@ -11,7 +11,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {DragDropModule} from "@angular/cdk/drag-drop";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {TranslocoModule} from "@ngneat/transloco";
-import {TooltipFeedbackComponent} from "./componenents/tooltip-feedback/tooltip-feedback.component";
+import {TooltipFeedBackComponent} from "./componenents/tooltip-feed-back/tooltip-feed-back.component";
 
 @NgModule({
   imports: [CommonModule, MatButtonModule, MatIconModule, DragDropModule, MatTooltipModule, TranslocoModule],
@@ -19,7 +19,7 @@ import {TooltipFeedbackComponent} from "./componenents/tooltip-feedback/tooltip-
     SpinnerComponent,
     ConfirmationDialogComponent,
     DonateButtonComponent,
-    TooltipFeedbackComponent
+    TooltipFeedBackComponent
   ],
   exports: [
     CommonModule,
@@ -29,7 +29,7 @@ import {TooltipFeedbackComponent} from "./componenents/tooltip-feedback/tooltip-
     MatSnackBarModule,
     MatDialogModule,
     DonateButtonComponent,
-    TooltipFeedbackComponent
+    TooltipFeedBackComponent
   ]
 })
 export class ShareModule {

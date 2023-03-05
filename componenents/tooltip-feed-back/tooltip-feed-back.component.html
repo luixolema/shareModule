@@ -1,8 +1,8 @@
-<ng-content></ng-content>
-  <span
-    #tooltipElement="matTooltip" [matTooltipPosition]="'right'"
+<span
+    #tooltipElement="matTooltip" [matTooltipPosition]="this.matTooltipPosition"
     [matTooltipDisabled]="this.disable"
     [matTooltipHideDelay]="2000"
     (mouseenter)="$event.stopImmediatePropagation()"
     [matTooltip]="this.tooltip">
+    <ng-content></ng-content>
 </span>

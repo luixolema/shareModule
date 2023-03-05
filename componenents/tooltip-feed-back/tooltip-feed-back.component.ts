@@ -1,5 +1,5 @@
 import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
-import {MatTooltip} from '@angular/material/tooltip';
+import {MatTooltip, TooltipPosition} from '@angular/material/tooltip';
 
 @Component({
   selector: 'tooltip-feed-back',
@@ -8,11 +8,12 @@ import {MatTooltip} from '@angular/material/tooltip';
 })
 export class TooltipFeedBackComponent implements OnInit {
 
-  @ViewChild('tooltipElement') tooltipElement: MatTooltip;
+  @ViewChild('tooltipElement') tooltipElement!: MatTooltip;
   @Input() tooltip!: string;
+  @Input() matTooltipPosition: TooltipPosition = 'above';
   disable = true;
-  private timeoutShow: number;
-  private timeoutHide: number;
+  private timeoutShow: number | undefined;
+  private timeoutHide: number | undefined;
 
   constructor() { }
 
