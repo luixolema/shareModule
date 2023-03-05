@@ -32,5 +32,5 @@ import {TooltipFeedbackComponent} from "./componenents/tooltip-feedback/tooltip-
     TooltipFeedbackComponent
   ]
 })
-export class SharedModule {
+export class ShareModule {
 }
